@@ -76,7 +76,7 @@ function App() {
 
             </div>
             <button id={"roll"} onClick={rollDice}>{tenzies ? "New Game" : "Roll"}</button>
-            {tenzies && <Confetti width={"4000"} height={"4000"}/>}
+            {tenzies && <Confetti />}
         </main>
     </div>
   )
