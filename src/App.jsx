@@ -37,7 +37,7 @@ function App() {
        const allMatch = dice.every((die) => die.value === firstValue);
         if (allHeld && allMatch) {
             setTenzies(true);
-            console.log("you won!")
+
         }
     }, [dice])
 
@@ -61,7 +61,7 @@ function App() {
             })
         })
 
-        console.log(id)
+
     }
 
     return (
@@ -76,7 +76,7 @@ function App() {
 
             </div>
             <button id={"roll"} onClick={rollDice}>{tenzies ? "New Game" : "Roll"}</button>
-            {tenzies && <Confetti />}
+            {tenzies && <Confetti width="2000" height="1500" />}
         </main>
     </div>
   )

@@ -23,7 +23,8 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     background-color: #2e3440;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    overflow-x: hidden;
 }
 p,div,h1,h2,h3,h4,h5,h6,main,header,footer {
 margin: 0;
@@ -61,7 +62,7 @@ cursor: pointer;
 }
 main {
 background-color: #3B4252;
-height: 100%;
+height: min-content;
 width: 800px;
 border-radius: 10px;
   box-shadow:
@@ -84,6 +85,30 @@ text-align: center;
 padding: 0 130px;
 margin-bottom: 50px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2E3440;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(76,86,106);
+     border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(76,86,106, 0.8);
+}
+
 
 .Die-container {
 height: min-content;
